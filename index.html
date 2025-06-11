@@ -1,45 +1,50 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Priviet Online</title>
-  <style>
-    body {
-      background: #111;
-      color: white;
-      font-family: sans-serif;
-      text-align: center;
-      padding: 3rem 1rem;
-    }
-
-    h1 {
-      font-size: 2rem;
-      margin-bottom: 2rem;
-    }
-
-    .player {
-      background: #222;
-      padding: 2rem;
-      border-radius: 12px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.4);
-      max-width: 400px;
-      margin: 0 auto;
-    }
-
-    audio {
-      width: 100%;
-      margin-top: 1rem;
-    }
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Reproductor Naranja</title>
+<style>
+  body {
+    background: #111;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  .audio-player {
+    background: #222;
+    border-radius: 10px;
+    padding: 20px 30px;
+    box-shadow: 0 0 15px #f97316cc;
+    width: 320px;
+    text-align: center;
+  }
+  audio {
+    width: 100%;
+    outline: none;
+  }
+  audio::-webkit-media-controls-panel {
+    background-color: #f97316 !important; /* naranja */
+  }
+  h2 {
+    margin-bottom: 15px;
+    color: #f97316;
+  }
+</style>
 </head>
 <body>
-  <div class="player">
-    <h1>🎧 Priviet Online</h1>
-    <audio controls autoplay>
-      <source src="https://stream.radiopriviet.com/stream" type="audio/mpeg">
-      Tu navegador no soporta audio HTML5.
-    </audio>
-  </div>
+
+<div class="audio-player">
+  <h2>Priviet Online</h2>
+  <audio controls preload="none">
+    <source src="https://stream.radiopriviet.com/stream" type="audio/mpeg" />
+    Tu navegador no soporta audio HTML5.
+  </audio>
+</div>
+
 </body>
 </html>
