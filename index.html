@@ -3,36 +3,36 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Reproductor Naranja</title>
+<title>Reproductor Naranja con Fondo</title>
 <style>
   body {
-    background: #111;
+    margin: 0;
     font-family: Arial, sans-serif;
-    color: #fff;
-    display: flex;
+    color: #f97316; /* naranja para texto */
     height: 100vh;
+    display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0;
+    /* Imagen de fondo general: cambia la URL por la que quieras */
+    background: url('girasoles 2.jpg') no-repeat center center fixed;
+    background-size: cover;
   }
   .audio-player {
-    background: #222;
+    background: white; /* fondo blanco */
     border-radius: 10px;
     padding: 20px 30px;
     box-shadow: 0 0 15px #f97316cc;
     width: 320px;
     text-align: center;
+    color: #f97316; /* texto naranja */
   }
   audio {
     width: 100%;
     outline: none;
   }
-  audio::-webkit-media-controls-panel {
-    background-color: #f97316 !important; /* naranja */
-  }
   h2 {
     margin-bottom: 15px;
-    color: #f97316;
+    font-weight: bold;
   }
 </style>
 </head>
